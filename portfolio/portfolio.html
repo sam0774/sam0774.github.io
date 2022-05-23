@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8"/>
     <meta name="description" content="sh 페이지">
-    <title>20182008 포트폴리오 홈페이지</title>
+    <title>20182008 포트폴리오</title>
     <style>
       .gra{
         background: linear-gradient(-135deg, #83A4D4, #B6FBFF) fixed;
       }
       
-      .SP{ text-align: center; font-size:500%;
+      header{ text-align: center; font-size:200%;
       }
       
       hr{ 
@@ -22,44 +22,56 @@
       border-width: 0 0 1px 0; 
       border-radius: 5px; 
       }
-      .emo{
-        font-size:100px;}
-      .font{
-        font-family:"Courier New"; font-size:30px;
-      }
-      .profile {
+      .profileSize {
         font-size:40px;
       }
       .sideTitle{ 
        font-size:30px;
        font-family: "Times New Roman";
       }
+
+      
+      
+      /* 사진*/
+      .box {
+        width: 150px;
+        height: 150px; 
+        border-radius: 70%;
+        overflow: hidden;
+        float: left;
+      }
+      .profile {
+       width: 100%;
+       height: 100%;
+       object-fit: cover;
+      }
     </style>
     
   </head>
   
+  
+  
+  
+  
+  
+  <!-- Body  -->
   <body class="gra">
-    <div>
-      <h1 class="SP">SeokHyun's Portfolio</h1>
-    </div>
+    <header>
+      <h1>SeokHyun's Portfolio</h1>
+    </header>
     
-    <div class="sideTitle">Today, better than yesterday🔥</div>
-    <hr class="style18">
+      <span class="sideTitle">Today, better than yesterday🔥</span>
+    <hr class="style18"/>
     
+        
     <main>
       <section>
-        <h2 class="profile">Profile</h2>
-        <dl>
-          <dt>Language<dt>
-          <dd>C</dd>
-          <dd>C++</dd>
-          <dd>Java</dd>
-          <dd>HTML</dd>
-          
-          
+        <p><img src="image.png" class= "box profile"> 컴퓨터공학과<br/>20182008</br>김석현입니다.
       </section>
-    </main>
     
+
+    </main>
+ 
     
     <aside>
     </aside>
