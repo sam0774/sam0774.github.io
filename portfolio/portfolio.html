@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8"/>
-    <meta name="description" content="sh 페이지">
+    <meta name="description" content="ksh 포트폴리오">
     <title>20182008 포트폴리오</title>
     <style>
-      .gra{
-        background: linear-gradient(-135deg, #83A4D4, #B6FBFF) fixed;
+      .bodyColor{
+        background: linear-gradient(-135deg, #8e9eab, #d7d2cc) fixed;
       }
       
       header{ text-align: center; font-size:200%;
@@ -26,25 +26,70 @@
         font-size:40px;
       }
       .sideTitle{ 
+       text-align: center;
        font-size:30px;
-       font-family: "Times New Roman";
+       font-family: fantasy;
+       
+      }
+      .div-profile {
+        text-align: center;
+        border: 1px solid black;
+        padding: 20px;
+        margin: 15px;
+      }
+      .div-introduction {
+        text-align: center;
+        border: 1px solid black;
+        padding: 20px;
+        margin: 15px;
       }
 
-      
+      .in{
+        display: inline-block;
+        border: 1px solid black;
+        font-size:large;
+      }
       
       /* 사진*/
       .box {
-        width: 150px;
-        height: 150px; 
+        width: 200px;
+        height: 200px; 
         border-radius: 70%;
         overflow: hidden;
-        float: left;
+      
       }
       .profile {
        width: 200px;
-       height: 200px;
+       height:200px;
        object-fit: cover;
       }
+      
+      table.typeA {
+  border-collapse: separate;
+  border-spacing: 1px;
+  text-align: center;
+  line-height: 1.5;
+  margin: auto;
+}
+table.typeA th {
+  
+  width: 300px;
+  padding: 10px;
+  font-weight: bold;
+  vertical-align: top;
+  background: #8e9eab;
+  border-radius: 16px;
+}
+table.typeA td {
+  width: 500px;
+  padding: 10px;
+  vertical-align: top;
+  border-bottom: 1px solid #ccc;
+  background: #A4A4A4;
+  border-radius: 16px;
+}
+      
+      
     </style>
     
   </head>
@@ -55,21 +100,66 @@
   
   
   <!-- Body  -->
-  <body class="gra">
+  <body class="bodyColor">
     <header>
       <h1>SeokHyun's Portfolio</h1>
     </header>
-    
-      <span class="sideTitle">Today, better than yesterday🔥</span>
+    <br/><br/><br/>
+      <div class="sideTitle">Today, better than yesterday🔥</div>
     <hr class="style18"/>
     
         
     <main>
       <section>
-        <p><img src="sampleImage.png" class= "box profile"> 컴퓨터공학과<br/>20182008</br>김석현입니다.
+       <div class="div-profile">
+            <img src="image.png" class= "box profile"> 
+          <div class="in">
+            <p style="font-size:30px; color:#585858;">Dreamming..</p>
+            <p style="font-size:30px; color:#585858;">Application Developer</p>
+            <p style="font-size:30px; color:#424242;">컴퓨터공학생</p>
+            <p style="font-size:25px; color:#2E2E2E;">20182008 <b>김석현</b>입니다.</p>
+         </div>
+         </div>
+
       </section>
     
+  
+        <section style="margin-top:200px;">
+          <div class="div-introduction">
+          
+         
+           <h1 style="font-size:50px;">📚To Take Subject List</h1>
+           <table class="typeA" style="border-radius: 30%;">
+  <thead>
+  <tr>
+    <th scope="cols">Grade 3</th>
+    <th scope="cols">Grade 4</th>
+    
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>데이터베이스</th>
+    <td>컴퓨터통신보안</th>
+    
+  <tr>
+    <td>네트워크와통신</th>
+    <td>네트워크프로그래밍</th>
+    
+  </tr>
+   <tr>
+    <td>데이터베이스실무프로젝트</th>
+    <td>웹서버응용</th>  
+  </tr>
 
+  <tr>
+    <td>리눅스</th>
+    <td>컴퓨터구조</th>
+  </tr>
+  </tbody>
+</table>
+        </div>
+      </section>
     </main>
  
     
